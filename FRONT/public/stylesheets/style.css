@@ -1,8 +1,13 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
-a {
-  color: #00B7FF;
+main {
+  flex: 1 0 auto;
+}
+
+.page-footer {
+    padding-top: 0px !important;
 }

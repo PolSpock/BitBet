@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FRONTBitBet.iml" filepath="$PROJECT_DIR$/FRONTBitBet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FRONT.iml" filepath="$PROJECT_DIR$/FRONT.iml" />
     </modules>
   </component>
 </project>
