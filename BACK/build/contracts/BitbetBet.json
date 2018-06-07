@@ -433,7 +433,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 559,
+                        "referencedDeclaration": 478,
                         "src": "486:3:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -874,7 +874,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 559,
+                            "referencedDeclaration": 478,
                             "src": "784:3:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -933,10 +933,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        562,
-                        563
+                        481,
+                        482
                       ],
-                      "referencedDeclaration": 562,
+                      "referencedDeclaration": 481,
                       "src": "776:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1020,7 +1020,7 @@
                                     "name": "abi",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 546,
+                                    "referencedDeclaration": 465,
                                     "src": "834:3:1",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_magic_abi",
@@ -1067,7 +1067,7 @@
                               "name": "keccak256",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 553,
+                              "referencedDeclaration": 472,
                               "src": "824:9:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
@@ -1123,7 +1123,7 @@
                                     "name": "abi",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 546,
+                                    "referencedDeclaration": 465,
                                     "src": "874:3:1",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_magic_abi",
@@ -1170,7 +1170,7 @@
                               "name": "keccak256",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 553,
+                              "referencedDeclaration": 472,
                               "src": "864:9:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
@@ -1243,7 +1243,7 @@
                                     "name": "abi",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 546,
+                                    "referencedDeclaration": 465,
                                     "src": "912:3:1",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_magic_abi",
@@ -1290,7 +1290,7 @@
                               "name": "keccak256",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 553,
+                              "referencedDeclaration": 472,
                               "src": "902:9:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
@@ -1346,7 +1346,7 @@
                                     "name": "abi",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 546,
+                                    "referencedDeclaration": 465,
                                     "src": "952:3:1",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_magic_abi",
@@ -1393,7 +1393,7 @@
                               "name": "keccak256",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 553,
+                              "referencedDeclaration": 472,
                               "src": "942:9:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
@@ -1438,10 +1438,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        562,
-                        563
+                        481,
+                        482
                       ],
-                      "referencedDeclaration": 562,
+                      "referencedDeclaration": 481,
                       "src": "816:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1514,7 +1514,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 559,
+                        "referencedDeclaration": 478,
                         "src": "1019:3:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -1658,7 +1658,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 559,
+                        "referencedDeclaration": 478,
                         "src": "1099:3:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -1712,7 +1712,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 559,
+                            "referencedDeclaration": 478,
                             "src": "1143:3:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -2268,7 +2268,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 559,
+                          "referencedDeclaration": 478,
                           "src": "1583:3:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -2379,7 +2379,7 @@
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 574,
+                            "referencedDeclaration": 493,
                             "src": "1656:4:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_BitbetBet_$268",
@@ -2502,10 +2502,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        562,
-                        563
+                        481,
+                        482
                       ],
-                      "referencedDeclaration": 562,
+                      "referencedDeclaration": 481,
                       "src": "1716:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -2578,7 +2578,7 @@
                                   "name": "abi",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 546,
+                                  "referencedDeclaration": 465,
                                   "src": "1827:3:1",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_magic_abi",
@@ -2625,7 +2625,7 @@
                             "name": "keccak256",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 553,
+                            "referencedDeclaration": 472,
                             "src": "1817:9:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
@@ -2681,7 +2681,7 @@
                                   "name": "abi",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 546,
+                                  "referencedDeclaration": 465,
                                   "src": "1864:3:1",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_magic_abi",
@@ -2728,7 +2728,7 @@
                             "name": "keccak256",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 553,
+                            "referencedDeclaration": 472,
                             "src": "1854:9:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
@@ -2767,10 +2767,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        562,
-                        563
+                        481,
+                        482
                       ],
-                      "referencedDeclaration": 562,
+                      "referencedDeclaration": 481,
                       "src": "1809:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -2875,7 +2875,7 @@
                               "name": "abi",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 546,
+                              "referencedDeclaration": 465,
                               "src": "1945:3:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_abi",
@@ -2922,7 +2922,7 @@
                         "name": "keccak256",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 553,
+                        "referencedDeclaration": 472,
                         "src": "1935:9:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
@@ -2978,7 +2978,7 @@
                               "name": "abi",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 546,
+                              "referencedDeclaration": 465,
                               "src": "1985:3:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_abi",
@@ -3025,7 +3025,7 @@
                         "name": "keccak256",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 553,
+                        "referencedDeclaration": 472,
                         "src": "1975:9:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
@@ -3097,7 +3097,7 @@
                                 "name": "abi",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 546,
+                                "referencedDeclaration": 465,
                                 "src": "2100:3:1",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_magic_abi",
@@ -3144,7 +3144,7 @@
                           "name": "keccak256",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 553,
+                          "referencedDeclaration": 472,
                           "src": "2090:9:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
@@ -3200,7 +3200,7 @@
                                 "name": "abi",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 546,
+                                "referencedDeclaration": 465,
                                 "src": "2140:3:1",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_magic_abi",
@@ -3247,7 +3247,7 @@
                           "name": "keccak256",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 553,
+                          "referencedDeclaration": 472,
                           "src": "2130:9:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
@@ -3486,7 +3486,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 559,
+                          "referencedDeclaration": 478,
                           "src": "2238:3:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -3898,7 +3898,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 559,
+                        "referencedDeclaration": 478,
                         "src": "486:3:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -4339,7 +4339,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 559,
+                            "referencedDeclaration": 478,
                             "src": "784:3:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -4398,10 +4398,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        562,
-                        563
+                        481,
+                        482
                       ],
-                      "referencedDeclaration": 562,
+                      "referencedDeclaration": 481,
                       "src": "776:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -4485,7 +4485,7 @@
                                     "name": "abi",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 546,
+                                    "referencedDeclaration": 465,
                                     "src": "834:3:1",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_magic_abi",
@@ -4532,7 +4532,7 @@
                               "name": "keccak256",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 553,
+                              "referencedDeclaration": 472,
                               "src": "824:9:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
@@ -4588,7 +4588,7 @@
                                     "name": "abi",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 546,
+                                    "referencedDeclaration": 465,
                                     "src": "874:3:1",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_magic_abi",
@@ -4635,7 +4635,7 @@
                               "name": "keccak256",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 553,
+                              "referencedDeclaration": 472,
                               "src": "864:9:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
@@ -4708,7 +4708,7 @@
                                     "name": "abi",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 546,
+                                    "referencedDeclaration": 465,
                                     "src": "912:3:1",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_magic_abi",
@@ -4755,7 +4755,7 @@
                               "name": "keccak256",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 553,
+                              "referencedDeclaration": 472,
                               "src": "902:9:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
@@ -4811,7 +4811,7 @@
                                     "name": "abi",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 546,
+                                    "referencedDeclaration": 465,
                                     "src": "952:3:1",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_magic_abi",
@@ -4858,7 +4858,7 @@
                               "name": "keccak256",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 553,
+                              "referencedDeclaration": 472,
                               "src": "942:9:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
@@ -4903,10 +4903,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        562,
-                        563
+                        481,
+                        482
                       ],
-                      "referencedDeclaration": 562,
+                      "referencedDeclaration": 481,
                       "src": "816:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -4979,7 +4979,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 559,
+                        "referencedDeclaration": 478,
                         "src": "1019:3:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -5123,7 +5123,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 559,
+                        "referencedDeclaration": 478,
                         "src": "1099:3:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -5177,7 +5177,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 559,
+                            "referencedDeclaration": 478,
                             "src": "1143:3:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -5733,7 +5733,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 559,
+                          "referencedDeclaration": 478,
                           "src": "1583:3:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -5844,7 +5844,7 @@
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 574,
+                            "referencedDeclaration": 493,
                             "src": "1656:4:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_contract$_BitbetBet_$268",
@@ -5967,10 +5967,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        562,
-                        563
+                        481,
+                        482
                       ],
-                      "referencedDeclaration": 562,
+                      "referencedDeclaration": 481,
                       "src": "1716:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -6043,7 +6043,7 @@
                                   "name": "abi",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 546,
+                                  "referencedDeclaration": 465,
                                   "src": "1827:3:1",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_magic_abi",
@@ -6090,7 +6090,7 @@
                             "name": "keccak256",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 553,
+                            "referencedDeclaration": 472,
                             "src": "1817:9:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
@@ -6146,7 +6146,7 @@
                                   "name": "abi",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 546,
+                                  "referencedDeclaration": 465,
                                   "src": "1864:3:1",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_magic_abi",
@@ -6193,7 +6193,7 @@
                             "name": "keccak256",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 553,
+                            "referencedDeclaration": 472,
                             "src": "1854:9:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
@@ -6232,10 +6232,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        562,
-                        563
+                        481,
+                        482
                       ],
-                      "referencedDeclaration": 562,
+                      "referencedDeclaration": 481,
                       "src": "1809:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -6340,7 +6340,7 @@
                               "name": "abi",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 546,
+                              "referencedDeclaration": 465,
                               "src": "1945:3:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_abi",
@@ -6387,7 +6387,7 @@
                         "name": "keccak256",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 553,
+                        "referencedDeclaration": 472,
                         "src": "1935:9:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
@@ -6443,7 +6443,7 @@
                               "name": "abi",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 546,
+                              "referencedDeclaration": 465,
                               "src": "1985:3:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_abi",
@@ -6490,7 +6490,7 @@
                         "name": "keccak256",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 553,
+                        "referencedDeclaration": 472,
                         "src": "1975:9:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
@@ -6562,7 +6562,7 @@
                                 "name": "abi",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 546,
+                                "referencedDeclaration": 465,
                                 "src": "2100:3:1",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_magic_abi",
@@ -6609,7 +6609,7 @@
                           "name": "keccak256",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 553,
+                          "referencedDeclaration": 472,
                           "src": "2090:9:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
@@ -6665,7 +6665,7 @@
                                 "name": "abi",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 546,
+                                "referencedDeclaration": 465,
                                 "src": "2140:3:1",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_magic_abi",
@@ -6712,7 +6712,7 @@
                           "name": "keccak256",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 553,
+                          "referencedDeclaration": 472,
                           "src": "2130:9:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
@@ -6951,7 +6951,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 559,
+                          "referencedDeclaration": 478,
                           "src": "2238:3:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -7046,5 +7046,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-06-07T09:55:12.077Z"
+  "updatedAt": "2018-06-07T13:39:32.732Z"
 }

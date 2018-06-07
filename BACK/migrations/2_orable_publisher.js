@@ -1,4 +1,4 @@
-const BitBetOracle = artifacts.require("./bitbetoracle.sol");
+const BitBetOracle = artifacts.require("./BitbetOracle.sol");
 
 module.exports = async (deployer) => {
 
