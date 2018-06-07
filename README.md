@@ -1,0 +1,2 @@
+# BitBet
+BitBet Ethereum Blockchain
