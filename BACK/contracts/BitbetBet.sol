@@ -1,7 +1,7 @@
 pragma solidity ^0.4.23;
 
 
-import './BitBetOracleInterface.sol';
+import './BitbetOracleInterface.sol';
 
 contract BitbetBet {
 
@@ -14,6 +14,9 @@ contract BitbetBet {
     address[] public participantAccts;
 
     BitBetOracleInterface bitBetOracle;
+
+    // An event to trigger with values to index, an address and a string.
+    event BetSet(address indexed _betContrat, string indexed _team, uint256 indexed _amount);
 
     constructor(string _teamOne, string _teamTwo, uint32 _teamOneRate, uint32 _teamTwoRate) public payable {
         administrator = msg.sender;
@@ -38,6 +41,7 @@ contract BitbetBet {
         participant.amount = msg.value;
 
         participantAccts.push(msg.sender) -1;
+        emit BetSet(address(this), participant.team, participant.amount);
     }
 
 
@@ -52,7 +56,7 @@ contract BitbetBet {
     /* Le client demande ses gains */
     function retrieveGain() payable public {
         var (team, amount) = getParticipant(msg.sender);
-        var (winner, finish) = bitBetOracle.getBet(address(this));
+        var (teamOne, teamTwo, winner, finish) = bitBetOracle.getBet(address(this));
 
         // le match doit être terminé
         require(finish);

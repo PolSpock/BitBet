@@ -14,7 +14,35 @@
         <h5>Liste des Paris</h5>
       </div>
       <div id="betsBloc" class="col s12">
-
+        <table class='responsive-table striped'>
+          <thead>
+          <tr>
+            <th>Equipe 1</th>
+            <th>Equipe 2</th>
+            <th>Gagnant</th>
+            <th>Terminé</th>
+          </tr>
+          </thead>
+          <tbody id="tbodyBetsBloc">
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <h5>Mes paris</h5>
+      </div>
+      <div id="myBetsBlocs" class="col s12">
+        <table class='responsive-table striped'>
+          <thead>
+          <tr>
+            <th>Equipe</th>
+            <th>Montant</th>
+          </tr>
+          </thead>
+          <tbody id="tbodyMyBetsBlocs">
+          </tbody>
+        </table>
       </div>
     </div>
   </main>
@@ -27,9 +55,10 @@
     </div>
   </footer>
 </body>
-<script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+<script type="text/javascript" src="javascripts/web3.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
-<script  type="text/javascript" src="javascripts/oracleAbi.js"></script>
-<script  type="text/javascript" src="javascripts/index.js"></script>
+<script type="text/javascript" src="javascripts/oracleAbi.js"></script>
+<script type="text/javascript" src="javascripts/betAbi.js"></script>
+<script type="text/javascript" src="javascripts/index.js"></script>
 </html>

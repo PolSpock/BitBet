@@ -1,39 +1,62 @@
 var web3 = new Web3(new Web3.providers.HttpProvider("http://127.0.0.1:7545"));
 var BitbetOracle;
-var BitbetOracleInstance;
+var BitbetBet;
 var userAccount;
 
 function startApp() {
-    var bitbetOracleAddress = "0x96da1b66047666d72b8676077cf01a0d70060d8b";
-    BitbetOracle = web3.eth.contract([{"constant":false,"inputs":[{"name":"_bitBetContract","type":"address"},{"name":"_winner","type":"string"},{"name":"_finish","type":"bool"}],"name":"setResult","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"getBetsList","outputs":[{"name":"","type":"address[]"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"betsList","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_address","type":"address"},{"name":"_winner","type":"string"},{"name":"_finish","type":"bool"}],"name":"setBetTable","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[],"name":"createBet","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"_address","type":"address"}],"name":"getBet","outputs":[{"name":"","type":"string"},{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"}]);
-    BitbetOracleInstance = BitbetOracle.at(bitbetOracleAddress);
+     web3.eth.getAccounts().then(function (res) {
+        userAccount = res[0];
+    });
+    var bitbetOracleAddress = '0x96da1b66047666d72b8676077cf01a0d70060d8b';
+    BitbetOracle = new web3.eth.Contract(BitbetOracleAbi, bitbetOracleAddress);
 
-    // Call a function to update the UI with the new account
-    //getBetsList().then(displayBets);
-    console.log(getBetsList());
+    getBetsList().then(function (res) {
+        displayBets(res);
+        displayEngagedBet(res);
+    })
 }
 
 function displayBets(betsAddress) {
-    $("#betsBloc").empty();
+    $("#tbodyBetsBloc").empty();
     for (betAddress of betsAddress) {
         getBetDetail(betAddress).then(function(bet) {
-            $("#betsBloc").append(`
+            $("#tbodyBetsBloc").append(`
                 <tr>
-                    <td>${bet}</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>`);
+                    <td>${bet[0]} ${!bet[3] ? `<input data-address="${betAddress}" name="${bet[0]}" type="number" onkeydown="wannaBet(this)" placeholder="Parier pour cette équipe en indiquant un montant">`: ``}</td>
+                    <td>${bet[1]} ${!bet[3] ? `<input data-address="${betAddress}" name="${bet[1]}" type="number" onkeydown="wannaBet(this)" placeholder="Parier pour cette équipe en indiquant un montant">`: ``}</td>
+                    <td>${bet[2]}</td>
+                    <td>${bet[3] ? `Oui` : `Non`}</td>
+                </tr>
+            `);
+        });
+    }
+}
+
+function displayEngagedBet(betsAddress) {
+    $("#tbodyMyBetsBlocs").empty();
+    for (betAddress of betsAddress) {
+        BitbetBet = new web3.eth.Contract(BitbetBetAbi, betAddress);
+        getParticipant(betAddress).then(function (result) {
+            $("#tbodyMyBetsBlocs").append(`
+                <tr>
+                    <td>${result[0]}</td>
+                    <td>${web3.utils.fromWei(result[1], 'ether')}</td>
+                </tr>
+            `);
         })
     }
 }
 
 function getBetsList() {
-    console.log(BitbetOracleInstance);
-    return BitbetOracleInstance.getBetsList.call();
+    return BitbetOracle.methods.getBetsList().call();
 }
 
 function getBetDetail(address) {
-    return BitbetOracleInstance.getBet.call(address);
+    return BitbetOracle.methods.getBet(address).call();
+}
+
+function createBet() {
+    return BitbetOracle.methods.createBet().call();
 }
 
 window.addEventListener('load', function() {
@@ -41,7 +64,8 @@ window.addEventListener('load', function() {
     // Checking if Web3 has been injected by the browser (Mist/MetaMask)
     if (typeof web3 !== 'undefined') {
         // Use Mist/MetaMask's provider
-        web3js = new Web3(web3.currentProvider);
+        web3 = new Web3(web3.currentProvider);
+
     } else {
         // Handle the case where the user doesn't have Metamask installed
         // Probably show them a message prompting them to install Metamask
@@ -50,4 +74,28 @@ window.addEventListener('load', function() {
     // Now you can start your app & access web3 freely:
     startApp()
 
-})
+});
+
+function setBet(value, teamName) {
+    return BitbetBet.methods.setBet(teamName).send({ from: userAccount, value: web3.utils.toWei(value.toString(), "ether"), gas: 200000 });
+}
+
+function getParticipant() {
+    return BitbetBet.methods.getParticipant(userAccount).call();
+}
+
+function wannaBet(ele) {
+    if(event.keyCode == 13) {
+
+        BitbetBet = new web3.eth.Contract(BitbetBetAbi, ele.dataset.address);
+        setBet(ele.value, ele.name);
+
+        console.log(BitbetBet);
+        BitbetBet.events.BetSet()
+            .on("data", function(event) {
+                let data = event.returnValues;
+                displayEngagedBet([BitbetBet._address])
+            }).on("error", console.error);
+
+    };
+}

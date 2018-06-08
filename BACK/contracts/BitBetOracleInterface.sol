@@ -4,6 +4,6 @@ interface BitBetOracleInterface {
 
     function createBet() external;
 
-    function getBet(address _address) external returns (string winner, bool finish);
+    function getBet(address _address) external returns (string teamOne, string teamTwo, string winner, bool finish);
 
 }

@@ -12,27 +12,38 @@ contract BitbetOracle {
     function createBet() public {
         BitbetBet bitbetContract = new BitbetBet("teamOne", "teamTwo", 10, 12);
         // On ajoute le pari dans la table
-        setBetTable(address(bitbetContract), "teamOne", false);
+        setBetTable(address(bitbetContract), "teamOne", "teamTwo", "", false);
     }
 
     function setResult(BitbetBet _bitBetContract, string _winner, bool _finish) public {
         require(msg.sender == administrator);
 
-        setBetTable(address(_bitBetContract), _winner, _finish);
+        setBetTable(address(_bitBetContract), "", "", _winner, _finish);
     }
 
     mapping (address => Bet) bets;
     address[] public betsList;
 
     struct Bet {
+        string teamOne;
+        string teamTwo;
         string winner;
         bool finish;
     }
 
-    function setBetTable(address _address, string _winner, bool _finish) public {
+    function setBetTable(address _address, string _teamOne, string _teamTwo, string _winner, bool _finish) public {
         var bet = bets[_address];
 
-        bet.winner = _winner;
+        bytes memory tmpTeamOne = bytes(_teamOne); // Uses memory
+        bytes memory tmpTeamTwo = bytes(_teamTwo); // Uses memory
+        if (tmpTeamOne.length != 0 && tmpTeamTwo.length != 0) {
+            bet.teamOne = _teamOne;
+            bet.teamTwo = _teamTwo;
+        }
+
+        if (keccak256(_winner) == keccak256(_teamOne) || keccak256(_winner) == keccak256(_teamTwo)) {
+            bet.winner = _winner;
+        }
         bet.finish = _finish;
 
         betsList.push(_address) -1;
@@ -42,7 +53,7 @@ contract BitbetOracle {
         return betsList;
     }
 
-    function getBet(address _address) view public returns (string, bool) {
-        return (bets[_address].winner, bets[_address].finish);
+    function getBet(address _address) view public returns (string, string, string, bool) {
+        return (bets[_address].teamOne, bets[_address].teamTwo, bets[_address].winner, bets[_address].finish);
     }
 }
