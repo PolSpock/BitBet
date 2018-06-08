@@ -6,6 +6,7 @@ module.exports = async (deployer) => {
 	const bitBetOracle = await BitBetOracle.deployed().then(function(instance) {
   	console.log(instance);
 
-		instance.createBet();
+		instance.createBet("Raynald", "Jesus", 1, 10);
+		instance.createBet("Dofus", "Fortnite", 1, 10);
 	});
 };

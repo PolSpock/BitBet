@@ -19,11 +19,12 @@ function startApp() {
 function displayBets(betsAddress) {
     $("#tbodyBetsBloc").empty();
     for (betAddress of betsAddress) {
+        let contratAddress = betAddress;
         getBetDetail(betAddress).then(function(bet) {
             $("#tbodyBetsBloc").append(`
                 <tr>
-                    <td>${bet[0]} ${!bet[3] ? `<input data-address="${betAddress}" name="${bet[0]}" type="number" onkeydown="wannaBet(this)" placeholder="Parier pour cette équipe en indiquant un montant">`: ``}</td>
-                    <td>${bet[1]} ${!bet[3] ? `<input data-address="${betAddress}" name="${bet[1]}" type="number" onkeydown="wannaBet(this)" placeholder="Parier pour cette équipe en indiquant un montant">`: ``}</td>
+                    <td>${bet[0]} ${!bet[3] ? `<input data-address="${contratAddress}" name="${bet[0]}" type="number" onkeydown="wannaBet(this)" placeholder="Parier pour cette équipe en indiquant un montant">`: ``}</td>
+                    <td>${bet[1]} ${!bet[3] ? `<input data-address="${contratAddress}" name="${bet[1]}" type="number" onkeydown="wannaBet(this)" placeholder="Parier pour cette équipe en indiquant un montant">`: ``}</td>
                     <td>${bet[2]}</td>
                     <td>${bet[3] ? `Oui` : `Non`}</td>
                 </tr>

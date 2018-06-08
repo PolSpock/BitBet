@@ -9,10 +9,10 @@ contract BitbetOracle {
         administrator = msg.sender;
     }
 
-    function createBet() public {
-        BitbetBet bitbetContract = new BitbetBet("teamOne", "teamTwo", 10, 12);
+    function createBet(string _teamOne, string _teamTwo, uint32 _teamOneRate, uint32 _teamTwoRate) public {
+        BitbetBet bitbetContract = new BitbetBet(_teamOne, _teamTwo, _teamOneRate, _teamTwoRate);
         // On ajoute le pari dans la table
-        setBetTable(address(bitbetContract), "teamOne", "teamTwo", "", false);
+        setBetTable(address(bitbetContract), _teamOne, _teamTwo, "", false);
     }
 
     function setResult(BitbetBet _bitBetContract, string _winner, bool _finish) public {

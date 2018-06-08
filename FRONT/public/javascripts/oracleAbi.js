@@ -1,4 +1,4 @@
-var BitbetOracleAbi = [
+var BitbetOracleAbi =  [
     {
         "constant": false,
         "inputs": [
@@ -66,6 +66,32 @@ var BitbetOracleAbi = [
         "type": "function"
     },
     {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "_teamOne",
+                "type": "string"
+            },
+            {
+                "name": "_teamTwo",
+                "type": "string"
+            },
+            {
+                "name": "_teamOneRate",
+                "type": "uint32"
+            },
+            {
+                "name": "_teamTwoRate",
+                "type": "uint32"
+            }
+        ],
+        "name": "createBet",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
         "constant": true,
         "inputs": [
             {
@@ -82,15 +108,6 @@ var BitbetOracleAbi = [
         ],
         "payable": false,
         "stateMutability": "view",
-        "type": "function"
-    },
-    {
-        "constant": false,
-        "inputs": [],
-        "name": "createBet",
-        "outputs": [],
-        "payable": false,
-        "stateMutability": "nonpayable",
         "type": "function"
     },
     {

@@ -52,14 +52,14 @@
     "absolutePath": "/C/Users/Pol/Documents/Cours 4ème année/Blockchain/Projet/BitBet/BACK/contracts/BitbetOracleInterface.sol",
     "exportedSymbols": {
       "BitBetOracleInterface": [
-        525
+        533
       ]
     },
-    "id": 526,
+    "id": 534,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 508,
+        "id": 516,
         "literals": [
           "solidity",
           "^",
@@ -75,9 +75,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 525,
+        "id": 533,
         "linearizedBaseContracts": [
-          525
+          533
         ],
         "name": "BitBetOracleInterface",
         "nodeType": "ContractDefinition",
@@ -85,7 +85,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 511,
+            "id": 519,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -93,19 +93,19 @@
             "name": "createBet",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 509,
+              "id": 517,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "87:2:3"
             },
             "payable": false,
             "returnParameters": {
-              "id": 510,
+              "id": 518,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "98:0:3"
             },
-            "scope": 525,
+            "scope": 533,
             "src": "69:30:3",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -114,7 +114,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 524,
+            "id": 532,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -122,15 +122,15 @@
             "name": "getBet",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 514,
+              "id": 522,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 513,
+                  "id": 521,
                   "name": "_address",
                   "nodeType": "VariableDeclaration",
-                  "scope": 524,
+                  "scope": 532,
                   "src": "123:16:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -139,7 +139,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 512,
+                    "id": 520,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "123:7:3",
@@ -156,15 +156,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 523,
+              "id": 531,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 516,
+                  "id": 524,
                   "name": "teamOne",
                   "nodeType": "VariableDeclaration",
-                  "scope": 524,
+                  "scope": 532,
                   "src": "159:14:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -173,7 +173,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 515,
+                    "id": 523,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "159:6:3",
@@ -187,10 +187,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 518,
+                  "id": 526,
                   "name": "teamTwo",
                   "nodeType": "VariableDeclaration",
-                  "scope": 524,
+                  "scope": 532,
                   "src": "175:14:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -199,7 +199,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 517,
+                    "id": 525,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "175:6:3",
@@ -213,10 +213,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 520,
+                  "id": 528,
                   "name": "winner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 524,
+                  "scope": 532,
                   "src": "191:13:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -225,7 +225,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 519,
+                    "id": 527,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "191:6:3",
@@ -239,10 +239,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 522,
+                  "id": 530,
                   "name": "finish",
                   "nodeType": "VariableDeclaration",
-                  "scope": 524,
+                  "scope": 532,
                   "src": "206:11:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -251,7 +251,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 521,
+                    "id": 529,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "206:4:3",
@@ -266,14 +266,14 @@
               ],
               "src": "158:60:3"
             },
-            "scope": 525,
+            "scope": 533,
             "src": "107:112:3",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 526,
+        "scope": 534,
         "src": "28:196:3"
       }
     ],
@@ -283,14 +283,14 @@
     "absolutePath": "/C/Users/Pol/Documents/Cours 4ème année/Blockchain/Projet/BitBet/BACK/contracts/BitbetOracleInterface.sol",
     "exportedSymbols": {
       "BitBetOracleInterface": [
-        525
+        533
       ]
     },
-    "id": 526,
+    "id": 534,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 508,
+        "id": 516,
         "literals": [
           "solidity",
           "^",
@@ -306,9 +306,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 525,
+        "id": 533,
         "linearizedBaseContracts": [
-          525
+          533
         ],
         "name": "BitBetOracleInterface",
         "nodeType": "ContractDefinition",
@@ -316,7 +316,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 511,
+            "id": 519,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -324,19 +324,19 @@
             "name": "createBet",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 509,
+              "id": 517,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "87:2:3"
             },
             "payable": false,
             "returnParameters": {
-              "id": 510,
+              "id": 518,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "98:0:3"
             },
-            "scope": 525,
+            "scope": 533,
             "src": "69:30:3",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -345,7 +345,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 524,
+            "id": 532,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -353,15 +353,15 @@
             "name": "getBet",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 514,
+              "id": 522,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 513,
+                  "id": 521,
                   "name": "_address",
                   "nodeType": "VariableDeclaration",
-                  "scope": 524,
+                  "scope": 532,
                   "src": "123:16:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -370,7 +370,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 512,
+                    "id": 520,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "123:7:3",
@@ -387,15 +387,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 523,
+              "id": 531,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 516,
+                  "id": 524,
                   "name": "teamOne",
                   "nodeType": "VariableDeclaration",
-                  "scope": 524,
+                  "scope": 532,
                   "src": "159:14:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -404,7 +404,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 515,
+                    "id": 523,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "159:6:3",
@@ -418,10 +418,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 518,
+                  "id": 526,
                   "name": "teamTwo",
                   "nodeType": "VariableDeclaration",
-                  "scope": 524,
+                  "scope": 532,
                   "src": "175:14:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -430,7 +430,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 517,
+                    "id": 525,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "175:6:3",
@@ -444,10 +444,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 520,
+                  "id": 528,
                   "name": "winner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 524,
+                  "scope": 532,
                   "src": "191:13:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -456,7 +456,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 519,
+                    "id": 527,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "191:6:3",
@@ -470,10 +470,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 522,
+                  "id": 530,
                   "name": "finish",
                   "nodeType": "VariableDeclaration",
-                  "scope": 524,
+                  "scope": 532,
                   "src": "206:11:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -482,7 +482,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 521,
+                    "id": 529,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "206:4:3",
@@ -497,14 +497,14 @@
               ],
               "src": "158:60:3"
             },
-            "scope": 525,
+            "scope": 533,
             "src": "107:112:3",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 526,
+        "scope": 534,
         "src": "28:196:3"
       }
     ],
@@ -516,5 +516,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-06-08T13:20:59.469Z"
+  "updatedAt": "2018-06-08T15:04:43.189Z"
 }
